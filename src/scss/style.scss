@@ -1,0 +1,13 @@
+*{
+   font-family: 'Museo Sans';
+}
+@import "base/variables";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantage";
+
+.container{
+   max-width: 950px;
+   margin: 0 auto;
+}
