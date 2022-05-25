@@ -1,5 +1,9 @@
 @media (max-width:1200px){
-
+   .carousel{
+      &__wrapper{
+         width: 700px;
+      }
+   }
 }
 @media (max-width:991px){
    .promo{
@@ -77,6 +81,27 @@
    .button--submit{
       height: 40px;
    }
+   .carousel{
+      .slick-dots{
+         justify-content: space-between;
+         display: flex;
+         width: 200px;
+         margin: 0 auto;
+         list-style-type: none;
+         & button{
+            margin-top: 15px;
+            width: 30px;
+            height: 3px;
+            background: rgb(247, 251, 251) ;
+            overflow: hidden;
+         }
+      }
+      .slick-active{
+         & button{
+            background: $main_color;
+         }
+      }
+   }
 }
 @media (max-width:767px){
    .header{
@@ -146,6 +171,11 @@
    }
    .title--left{
       font-size: 24px;
+   }
+   .carousel{
+      &__wrapper{
+         width: 580px;
+      }
    }
 }
 @media (max-width:575px){
@@ -244,5 +274,18 @@
       & input{
          height: 35px;
       }
+   }
+   .carousel{
+      .slick-dots{
+         width: 150px;      
+         & button{
+            width: 20px;
+            height: 2px;
+         }
+      }
+   
+   &__wrapper{
+      width: 300px;
+   }
    }
 }
